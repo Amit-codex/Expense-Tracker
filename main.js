@@ -17,7 +17,7 @@ function addExpense(amount, description,category){
         description,category
     };
 
-    expense.push(expense);
+    expenses.push(expense);
     updateUI();
     saveToLocalStorage();
 }
