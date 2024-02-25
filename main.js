@@ -57,3 +57,20 @@ if(data){
 }
 }
 
+//add event listner to listen the form events
+expenseForm.addEventListener('submit', e =>{
+    e.preventDefault();
+    const amount = amountInput.value.trim();
+    const description = descriptionInput.value.trim();
+    const category = categoryInput.value.trim();
+
+    if(amount && description){
+    addExpense(amount, description, category);
+    amountInput.value = '';
+    descriptionInput.value = '';
+    categoryInput.value = '';
+    }
+    else{
+        alert('please enter both amount and description.');
+    }
+});
