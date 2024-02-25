@@ -80,3 +80,5 @@ clearButton.addEventListener('click', () => {
     updateUI();
     localStorage.clear();
 });
+
+loadFromLocalStorage();  //load data from local storage on page 
