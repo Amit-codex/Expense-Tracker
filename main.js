@@ -27,3 +27,19 @@ function deleteExpense(id) {
     updateUI();
     saveToLocalStorage();
 }
+
+function updateUI(){
+    expenseList.innerHTML = '';
+    let total = 0;
+
+    expenses.forEach(expense =>{
+        const li = document.createElement('li');
+        li.innerHTML = `₹${expense.amount.toFixed(2)} - ${expense.description} (${expense.category})
+        <button onclick="deleteExpense(${expense.id})">Delete</button>
+    `;
+    expenseList.appendChild(li);
+    total += expense.amount;
+    });
+
+    totalExpense.textContent = '₹${total.toFixed(2)}';
+}
