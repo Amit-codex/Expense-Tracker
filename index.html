@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Expense Tracker</h1>
+    <!------------------------ Expense Form ------------------->
     <form>
             <input type="number" id="amount" class="amount" placeholder="Enter the amount here" required>
 
@@ -19,5 +20,14 @@
             <button id="clear" type="button">Clear</button>
 
     </form>
+
+    <!------------------------ Expense List ------------------------>
+    <ul id="expense-list"></ul>
+
+    <!--------------------------- Summary ------------------------>
+    <div id="summary">
+        <h2>Here the summaru of your Expense:</h2>
+        <p>Total Expense- <span id="total-expenses">₹0.00</span></p>
+    </div>
 </body>
 </html>
