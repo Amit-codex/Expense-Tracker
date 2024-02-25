@@ -43,3 +43,17 @@ function updateUI(){
 
     totalExpense.textContent = '₹${total.toFixed(2)}';
 }
+
+
+function saveToLocalStorage(){
+    localStorage.setItem('expenses', JSON.stringify(expenses));
+}
+
+function loadFromLocalStorage(){
+    const data = localStorage.getItem('expenses')
+if(data){
+    expenses = JSON.parse(data)
+    updateUI();
+}
+}
+
