@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Expense Tracker</h1>
     <!------------------------ Expense Form ------------------->
-    <form>
+    <form id="expense-form">
             <input type="number" id="amount" class="amount" placeholder="Enter the amount here" required>
 
             <input type="text" id="description" class="description">
@@ -29,5 +30,7 @@
         <h2>Here the summaru of your Expense:</h2>
         <p>Total Expense- <span id="total-expenses">₹0.00</span></p>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
