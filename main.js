@@ -74,3 +74,9 @@ expenseForm.addEventListener('submit', e =>{
         alert('please enter both amount and description.');
     }
 });
+
+clearButton.addEventListener('click', () => {
+    expenses = [];
+    updateUI();
+    localStorage.clear();
+});
