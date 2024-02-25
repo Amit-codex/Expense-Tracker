@@ -1,5 +1,5 @@
 // Expense Data store
-let expense = [];  
+let expenses = [];  
 
 // DOM Element to manipulate the form 
 const expenseForm = document.getElementById('expense-form');
@@ -18,6 +18,12 @@ function addExpense(amount, description,category){
     };
 
     expense.push(expense);
+    updateUI();
+    saveToLocalStorage();
+}
+
+function deleteExpense(id) {
+    expenses = expenses.filter(expense => expense.id !== id);
     updateUI();
     saveToLocalStorage();
 }
