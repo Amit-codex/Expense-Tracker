@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+.inputArea{
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+}

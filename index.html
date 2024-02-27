@@ -10,16 +10,16 @@
     <h1>Expense Tracker</h1>
     <!------------------------ Expense Form ------------------->
     <form id="expense-form">
+        <div class="inputArea">
             <input type="number" id="amount" class="amount" placeholder="Enter the amount here" required>
 
             <input type="text" id="description" class="description">
 
             <input type="text" id="category" class="category">
+        </div> 
+        <button id="submit" type="submit">Track</button>
 
-            <button id="submit" type="submit">Track</button>
-
-            <button id="clear" type="button">Clear</button>
-
+        <button id="clear" type="button">Clear</button>
     </form>
 
     <!------------------------ Expense List ------------------------>
