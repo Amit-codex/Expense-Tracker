@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1>Expense Tracker</h1>
     <!------------------------ Expense Form ------------------->
     <form id="expense-form">
-        <div class="inputArea">
-            <input type="number" id="amount" class="amount" placeholder="Enter the amount here" required>
+      <div class="inputArea">
+        <input
+          type="number"
+          id="amount"
+          class="amount"
+          placeholder="Enter the amount here"
+          required
+        />
 
-            <input type="text" id="description" class="description">
+        <input type="text" id="description" class="description" />
 
-            <input type="text" id="category" class="category">
-        </div> 
+        <input type="text" id="category" class="category" />
+      </div>
+      <div class="buttons">
         <button id="submit" type="submit">Track</button>
 
         <button id="clear" type="button">Clear</button>
+      </div>
     </form>
 
     <!------------------------ Expense List ------------------------>
@@ -27,10 +35,10 @@
 
     <!--------------------------- Summary ------------------------>
     <div id="summary">
-        <h2>Here the summaru of your Expense:</h2>
-        <p>Total Expense- <span id="total-expenses">₹0.00</span></p>
+      <h2>Here the summaru of your Expense:</h2>
+      <p>Total Expense- <span id="total-expenses">₹0.00</span></p>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

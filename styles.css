@@ -26,3 +26,16 @@ input{
     height: 4vh;
     width: 50%;
 }
+
+.buttons{
+    margin-top: 30px;
+    margin-left: 45%;
+    gap: 50px;
+}
+
+button{
+    font-size: 30px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+}
